@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.25rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+form .form-control {
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.btn-dark {
+    background-color: #000;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+/* Button styles for Add/Remove Ticket */
+.btn-outline-success {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-outline-danger {
+    border-color: var(--color-danger);
+    color: var(--color-danger);
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--color-danger);
+    color: var(--color-white);
+}

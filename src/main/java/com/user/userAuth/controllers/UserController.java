@@ -9,36 +9,43 @@ import com.user.userAuth.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:63342")
 public class UserController {
-@Autowired
-UserService userService;
 
+    @Autowired
+    UserService userService;
+
+    /*******************************************************************************************************/
     @PostMapping("/signup")
     public User signUp(@RequestBody SignupRequestDto signupRequestDto){
         String name = signupRequestDto.getName();
         String email = signupRequestDto.getEmail();
         String password = signupRequestDto.getPassword();
         return userService.signUp(name, email, password);
+
     }
 
+    /*******************************************************************************************************/
     @PostMapping("/login")
     public Token login(@RequestBody LoginRequestDto loginRequestDto){
+
         try {
+
             String email = loginRequestDto.getEmail();
             String password = loginRequestDto.getPassword();
             return userService.login(email, password);
+
         }catch (InvalidCredentialsException e){
-                System.out.println(e.getMessage());
+
+            System.out.println(e.getMessage());
         }
-        return null;
+        return null ;
     }
 
+    /*******************************************************************************************************/
     @PostMapping("/logout")
     public ResponseEntity<Void> logout(@RequestParam String token){
         userService.logout(token);

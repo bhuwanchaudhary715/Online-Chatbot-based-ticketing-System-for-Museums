@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuseumBot</title>
+    <link rel="stylesheet" href="bot.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <span>MyMuseum</span>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/payment">Chatbot Ticketing System</a>
+            <a href="#">Analytics Dashboard</a>
+        </div>
+        <div class="language-selector">
+            <select>
+                <option value="English">English</option>
+                <option value="Spanish">Español</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="sidebar">
+            <button onclick="window.location.replace('/payment')">Book Tickets</button>
+            <button>Inquire About Shows</button>
+            <button>View Ticket History</button>
+            <button>Customer Support</button>
+        </div>
+
+        <div class="chatbox">
+            <h2>Chat with MuseumBot</h2>
+            <div class="chat-window">
+                <div class="message bot">
+                    <div class="avatar">🤖</div>
+                    <div class="text">Hello! How can I assist you today?</div>
+                </div>
+            </div>
+
+            <!-- Predefined questions for the user -->
+            <div class="question-options">
+                <button class="question-btn">What are the upcoming exhibitions?</button>
+                <button class="question-btn">How can I book a ticket?</button>
+                <button class="question-btn">What is the refund policy?</button>
+                <button class="question-btn">How can I contact support?</button>
+            </div>
+
+            <div class="input-area">
+                <input type="text" placeholder="Type a message..." id="userInput"/>
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <script src="bot.js"></script>
+</body>
+</html>
