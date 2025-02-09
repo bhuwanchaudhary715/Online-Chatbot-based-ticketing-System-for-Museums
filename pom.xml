@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.user</groupId>
-	<artifactId>userAuth</artifactId>
+	<artifactId>OnlineChatbotBasedTicketingSystemForMuseums</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>userAuth</name>
 	<description>User authentication service</description>
@@ -60,11 +60,9 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-crypto -->
 		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-crypto</artifactId>
-			<version>6.2.4</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
 
@@ -72,7 +70,7 @@
 		<dependency>
 			<groupId>com.razorpay</groupId>
 			<artifactId>razorpay-java</artifactId>
-			<version>1.4.8</version>
+			<version>1.4.6</version>
 		</dependency>
 
 

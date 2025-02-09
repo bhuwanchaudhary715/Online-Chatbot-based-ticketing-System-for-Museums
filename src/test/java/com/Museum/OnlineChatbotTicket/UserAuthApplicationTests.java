@@ -1,4 +1,4 @@
-package com.user.userAuth;
+package com.Museum.OnlineChatbotTicket;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
