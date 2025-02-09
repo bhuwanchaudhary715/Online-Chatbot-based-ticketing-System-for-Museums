@@ -1,0 +1,141 @@
+<html></html>
+<head>
+    <style>
+        
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .footer {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            padding: 15px 0; /* Adjusted padding for overall footer height */
+            font-size: 12px; /* Smaller font size */
+            line-height: 1.4; /* Adjust line height */
+        }
+        
+        .footer-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between; /* Space between sections */
+        }
+        
+        .footer-section {
+            flex: 1;
+            padding: 0 5px; /* Reduced padding for each section */
+        }
+        
+        .footer-section h3 {
+            font-size: 1rem; /* Reduced heading font size */
+            margin-bottom: 6px; /* Reduced margin for headings */
+        }
+        
+        .footer-section p {
+            margin: 0;
+            font-size: 12px; /* Reduced font size for paragraph text */
+        }
+        
+        .footer-section.about-us {
+            text-align: center; /* Center the About Us section */
+            flex: 1; /* Allow About Us to grow and shrink */
+            padding: 0 300px; /* Adjust padding for About Us section */
+            margin-right: 100px;
+        }
+        
+        .footer-section.follow-us {
+            flex: 0 0 auto; /* Prevent Follow Us section from growing */
+            margin-left: auto; /* Push Follow Us section to the right */
+            padding: 0 10px; /* Adjust padding for Follow Us section */
+        }
+        
+        .social-media {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Align icons vertically */
+            gap: 6px; /* Reduced gap between icons */
+        }
+        
+        .social-item {
+            display: flex;
+            align-items: center;
+            gap: 6px; /* Reduced gap between icon and name */
+        }
+        
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px; /* Reduced size of icon container */
+            height: 24px; /* Reduced size of icon container */
+            border-radius: 50%; /* Keep circular shape */
+            background-color: #fff; /* White background for icon container */
+            overflow: hidden;
+        }
+        
+        .social-icon img {
+            width: 14px; /* Adjust size */
+            height: 14px; /* Adjust size */
+        }
+        
+        .social-name {
+            color: #fff;
+            font-size: 12px; /* Smaller font size for names */
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 10px; /* Margin for bottom text */
+            font-size: 10px; /* Smaller font size */
+        }
+        
+        .footer-bottom p {
+            margin: 0;
+        }
+        
+        
+        
+    </style>
+</head>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-section about-us">
+            <h3>About Us</h3>
+            <p>We are dedicated to providing an exceptional experience through our exhibits, educational programs, and community outreach. Visit us to explore art, history, and culture.</p>
+        </div>
+        <div class="footer-section follow-us">
+            <h3>Follow Us</h3>
+            <ul class="social-media">
+                <li class="social-item">
+                    <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <span class="social-name">Facebook</span>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <span class="social-name">Twitter</span>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <span class="social-name">Instagram</span>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+</footer>
+
+    </div>
+</footer>
+
+
+
+</html>
