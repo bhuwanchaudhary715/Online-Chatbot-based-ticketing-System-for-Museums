@@ -3,6 +3,8 @@ package com.Museum.OnlineChatbotTicket.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
+
 @Data
 @Entity
 @Table(name = "personal_info")
@@ -11,15 +13,27 @@ public class PersonalInfo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
-    private String name;
+    @Column(name = "first_name")
+    private String firstname;
 
-    @Column(nullable = false, unique = true)
+    @Column(name = "last_name")
+    private String lastname;
+
+    @Column(name = "email")
     private String email;
 
-    @Column(name = "phone_no", nullable = false)
+    @Column(name = "phone_no")
     private String phoneNo;
 
+    @Column(name = "date_of_birth")
+    private LocalDate dateofbirth;
 
-    // Getters, Setters, Constructors
+    @Column(name = "address")
+    private String address;
+
+    @Column(name = "identification_details")
+    private String identificationdetails;
+
+    // Getters and Setters
+
 }

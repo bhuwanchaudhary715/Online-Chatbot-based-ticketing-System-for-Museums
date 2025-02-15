@@ -3,26 +3,27 @@ package com.Museum.OnlineChatbotTicket.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.time.OffsetDateTime;
-
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Data
 @Entity
 @Table(name = "ticket_details")
 public class TicketDetails {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "date_time", nullable = false)
-    private OffsetDateTime dateTime;
+    @Column(name = "date")
+    private LocalDate date;
 
-    @Column(name = "adult_tickets", nullable = false)
-    private Integer adultTickets;
+    @Column(name = "time")
+    private LocalTime time;
 
-    @Column(name = "child_tickets", nullable = false)
-    private Integer childTickets;
+    @Column(name = "adult_tickets")
+    private Integer adultticket;
 
-    // Getters, Setters, Constructors
+    @Column(name = "child_tickets")
+    private Integer childticket;
+
 }
