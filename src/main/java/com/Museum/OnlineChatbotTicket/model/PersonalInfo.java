@@ -2,9 +2,12 @@ package com.Museum.OnlineChatbotTicket.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 
 import java.time.LocalDate;
 
+@NoArgsConstructor
 @Data
 @Entity
 @Table(name = "personal_info")
@@ -36,4 +39,16 @@ public class PersonalInfo {
 
     // Getters and Setters
 
+
+    public PersonalInfo(Long id, String firstname, String lastname, String email, String phoneNo,
+                        LocalDate dateofbirth, String address, String identificationdetails) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.email = email;
+        this.phoneNo = phoneNo;
+        this.dateofbirth = dateofbirth;
+        this.address = address;
+        this.identificationdetails = identificationdetails;
+    }
 }
