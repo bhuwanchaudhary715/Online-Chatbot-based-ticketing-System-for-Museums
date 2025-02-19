@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Your Ticket Details</h1>
+
+<div>
+    <p>Date: <span th:text="${ticket.date}"></span></p>
+    <p>Time: <span th:text="${ticket.time}"></span></p>
+    <p>Adult Tickets: <span th:text="${ticket.adultticket}"></span></p>
+    <p>Child Tickets: <span th:text="${ticket.childticket}"></span></p>
+</div>
+
+<div>
+    <h3>QR Code:</h3>
+    <img src="cid:qrCode" alt="QR Code" style="width: 200px; height: 200px;"/>
+</div>
+</body>
+</html>

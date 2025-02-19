@@ -26,4 +26,6 @@ public class TicketDetails {
     @Column(name = "child_tickets")
     private Integer childticket;
 
+
+
 }

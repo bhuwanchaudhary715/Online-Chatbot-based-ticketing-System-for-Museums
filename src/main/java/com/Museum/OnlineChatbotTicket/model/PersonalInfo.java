@@ -39,16 +39,4 @@ public class PersonalInfo {
 
     // Getters and Setters
 
-
-    public PersonalInfo(Long id, String firstname, String lastname, String email, String phoneNo,
-                        LocalDate dateofbirth, String address, String identificationdetails) {
-        this.id = id;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.email = email;
-        this.phoneNo = phoneNo;
-        this.dateofbirth = dateofbirth;
-        this.address = address;
-        this.identificationdetails = identificationdetails;
-    }
 }
