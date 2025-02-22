@@ -1,6 +1,7 @@
 package com.Museum.OnlineChatbotTicket.service;
 
 import java.util.Map;
+import java.util.Optional;
 
 import com.Museum.OnlineChatbotTicket.model.Orders;
 import com.Museum.OnlineChatbotTicket.repository.OrdersRepository;
@@ -49,6 +50,8 @@ public class OrderService {
         return ordersRepository.save(order);
     }
 
+
+
     public Orders updateStatus(Map<String, String> map) {
         String razorpayId = map.get("razorpay_order_id");
         Orders order = ordersRepository.findByRazorpayOrderId(razorpayId);
@@ -56,4 +59,15 @@ public class OrderService {
         Orders orders = ordersRepository.save(order);
         return orders;
     }
+
+
+
+
+    public Orders fetchTicketDetails(Long ticketId) {
+
+        // Simple fetch by ID (you can add more logic if needed)
+        Optional<Orders> optionalOrder = ordersRepository.findById(ticketId);
+        return optionalOrder.orElse(null);
+    }
+
 }

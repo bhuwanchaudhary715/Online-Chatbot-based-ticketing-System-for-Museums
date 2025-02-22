@@ -121,9 +121,6 @@ public class BookingController {
         info.setLastname(getStringParameter(parameters, "last_name"));
         info.setEmail(getStringParameter(parameters, "email"));
         info.setPhoneNo(parsePhoneNumber(parameters.get("phone_no")));
-        info.setDateofbirth(parseLocalDate(getStringParameter(parameters, "date_of_birth")));
-        info.setAddress(getStringParameter(parameters, "address"));
-        info.setIdentificationdetails(getStringParameter(parameters, "identification_details"));
 
 
         boolean saved = bookingService.savePersonalInfo(info);
@@ -131,7 +128,7 @@ public class BookingController {
         response.put("fulfillmentText", saved ?
                 "Your details have been successfully saved.\n" +
                         "\nChoose the below options Mr/Mrs " + info.getFirstname() + " " + info.getLastname() +
-                        "\n1. Book Tickets" +
+                        "\n1. Book Tickets\n" +
                         "\n2. Ticket Cancellation" :
                 "Failed to save information. Please try again.");
     }

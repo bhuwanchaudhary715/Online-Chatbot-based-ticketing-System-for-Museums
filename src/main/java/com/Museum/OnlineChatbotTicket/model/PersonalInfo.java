@@ -28,14 +28,6 @@ public class PersonalInfo {
     @Column(name = "phone_no")
     private String phoneNo;
 
-    @Column(name = "date_of_birth")
-    private LocalDate dateofbirth;
-
-    @Column(name = "address")
-    private String address;
-
-    @Column(name = "identification_details")
-    private String identificationdetails;
 
     // Getters and Setters
 

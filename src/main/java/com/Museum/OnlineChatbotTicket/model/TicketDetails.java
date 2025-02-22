@@ -26,6 +26,9 @@ public class TicketDetails {
     @Column(name = "child_tickets")
     private Integer childticket;
 
+    @ManyToOne
+    @JoinColumn(name = "order_id")
+    private Orders order;
 
 
 }
