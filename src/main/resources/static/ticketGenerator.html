@@ -165,7 +165,23 @@
             color: #991b1b;
             border: 1px solid #fecaca;
         }
+
+        #btn{
+            padding: 12px 24px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
     </style>
+
 </head>
 <body>
 <div class="container">
@@ -222,6 +238,7 @@
         <button type="button" id="sendBtn" disabled>
             <span>Send Ticket Info</span>
         </button>
+        <a href="./index.html" id="btn" class="button text-white">Back to the Dashboard → </a>
     </div>
 </div>
 
@@ -317,5 +334,7 @@
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
 </script>
+
+
 </body>
 </html>
